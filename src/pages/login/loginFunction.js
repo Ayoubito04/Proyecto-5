@@ -33,7 +33,7 @@ export const loginFunction = () => {
         console.log(user);
         alert('Bienvenido ' + user.name);
         form.reset();
-        window.location.href ='/tienda.html';
+        window.location.href ='tienda';
 
     
 
