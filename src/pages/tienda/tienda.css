@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace, sans-serif;
+
+}
+.navbar img{
+    width: 6%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 1px solid #dee2e6;
+    transform: translateY(-10px);
+    animation: logoFadeIn 1s ease-in-out;
+}
+@keyframes logoFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.navbar img:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    scale: 1.1;
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+
+
+
+
+
+}
+
+
+
+.navbar{
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+}
+.navbar input{
+    width:20%;
+    height: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+}
+.navbar button{
+   background-color: whitesmoke;
+   border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+.navbar button:hover{
+    background-color: #e9ecef;
+}   
+.navbar select{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+    background-color: whitesmoke;
+}
+#section-product{
+   display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin-top: 20px;
+    background-color: #333;
+
+
+}
+
+#section-product div{
+  
+     width: 100%;
+     height: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     
+}
+#section-product img{
+    width: 90%;
+    height: 30%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dee2e6;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#section-product h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    
+}
+#section-product p{
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+
+}
+#section-product button{
+    width: 40%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color:whitesmoke;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+#section-product button:hover{
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 10px;
+    
+}
+#section-product button:disabled{
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+#section-product h2{
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#section-product p{
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#section-product button{
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+#section-product .Precio{
+    font-size: 1rem;
+    color: #28a745;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+#section-product .description{
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 10px;
+    display: none;
+    
+}
+#section-product .card{
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+}
+#section-product .card:hover .description{
+    display:block;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 10px;
+    transform:translate(10px, 10px);
+    transition: opacity 0.3s ease, transform 0.3s ease,visibility 0s linear 0.3s;
+
+   
+
+
+   
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

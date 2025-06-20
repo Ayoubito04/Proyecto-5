@@ -1,0 +1,30 @@
+.button_footer{
+    width: 20%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: whitesmoke;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    gap: 10px;
+    margin-left: 10px;
+}
+.button_footer:hover{
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+.button_footer img{
+    width: 5%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
