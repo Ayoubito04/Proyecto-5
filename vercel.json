@@ -3,9 +3,5 @@
     { "source": "/", "destination": "/index.html" },
     {"source":"/tienda", "destination": "/tienda.html"}
 
-  ],
-   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/index.html" }
-  ]
+  ]  
 }
