@@ -32,7 +32,8 @@ export const loginFunction = () => {
         }
         console.log(user);
         alert('Bienvenido ' + user.name);
-        window.location.href ='src/pages/tienda/tienda.html';
+        form.reset();
+        window.location.href ='/tienda.html';
 
     
 
